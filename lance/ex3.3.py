@@ -17,5 +17,6 @@ elif score >= 0.7 :
     print grades[2]
 elif score >= 0.6 :
     print grades[3]
+# else on line 21 doesn't work for some invalid syntax error
 elif score <= 0.6 :
     print grades[4]
