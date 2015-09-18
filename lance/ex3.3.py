@@ -7,7 +7,7 @@
 grades = ["A", "B", "C", "D", "F"]
 # print "The range is 0.0 - 1.0" # trips up Coursera interpreter
 input = raw_input("What did you get on that Python test? ")
-score = float(input) #fails to conver integers (e.g., 90, 80, etc.)
+score = float(input) #fails to convert integers (e.g., 90, 80, etc.)
 
 if score >= 0.9 :
     print grades[0]
