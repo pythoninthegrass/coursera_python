@@ -1,3 +1,14 @@
+x = 10.5 * 40 + (10.5 * 1.5 * (45 - 40))
+print x
+
+# def computepay(h,r):
+#     return h + (r * 1.5 * (h - 40))
+
+# h = 45
+# r = 10.5
+
+# pay = computepay(h,r)
+# print pay
 
 
 # x = (42 % 10)
