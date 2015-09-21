@@ -3,6 +3,8 @@
 #Then print out the largest and smallest numbers
 #Insert error handling for non numbers
 
+# Added duplicate commit to save solution in description.
+
 # largest = None
 # for num in [4, 5, 7]:
 #     try:
