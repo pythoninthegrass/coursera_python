@@ -32,27 +32,27 @@
 largest = None
 while True:
     try:
-        num = raw_input("Enter a number: ")
-        if num == "done":
+        nums = raw_input("Enter a number: ")
+        if nums == "done":
             break
+        num = int(nums)
         if largest is None or num > largest :
             largest = num
     except:
-        print "Invalid input", num
-        exit()
+        print "Invalid input"
 
 print "Maximum is", largest
 
 smallest = None
 while True:
     try:
-        num2 = raw_input("Enter a new number: ")
-        if num2 == "done":
+        nums2 = raw_input("Enter a new number: ")
+        if nums2 == "done":
             break
+        num2 = int(nums2)
         if smallest is None or num2 < smallest:
             smallest = num2
     except:
-        print "Invalid input", num2
-        exit()
+        print "Invalid input"
 
 print "Minimum is", smallest
