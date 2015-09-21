@@ -41,7 +41,7 @@ while True:
     except:
         print "Invalid input"
 
-print "Maximum is", largest
+print "Maximum is",largest
 
 smallest = None
 while True:
@@ -55,4 +55,4 @@ while True:
     except:
         print "Invalid input"
 
-print "Minimum is", smallest
+print "Minimum is",smallest
