@@ -38,7 +38,8 @@ while True:
         if largest is None or num > largest :
             largest = num
     except:
-        print "Invalid input"
+        print "Invalid input", num
+        exit()
 
 print "Maximum is", largest
 
@@ -51,6 +52,7 @@ while True:
         if smallest is None or num2 < smallest:
             smallest = num2
     except:
-        print "Invalid input"
+        print "Invalid input", num2
+        exit()
 
 print "Minimum is", smallest
