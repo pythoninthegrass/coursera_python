@@ -50,7 +50,7 @@ while True:
         if nums2 == "done":
             break
         num2 = int(nums2)
-        if smallest is None or num2 < smallest:
+        if smallest is None or num2 < smallest :
             smallest = num2
     except:
         print "Invalid input"
