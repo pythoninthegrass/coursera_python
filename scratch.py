@@ -1,4 +1,11 @@
+fhand = open('mbox-short.txt')
+inp = fhand.read()
 
+#fhand = open('mbox.txt')
+#x = 0
+#for line in fhand:
+#       x = x + 1
+#print x
 
 # smallest_so_far = None
 # for the_num in [9, 41, 12, 3, 74, 15] :
