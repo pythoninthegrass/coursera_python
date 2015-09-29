@@ -14,6 +14,7 @@ for line in fh:
     if line.startswith("X-DSPAM-Confidence:"):
     	line = line.strip()
     	nums.append(line[20:])
+
 new_nums = [float(i) for i in nums]
 
 average = sum(new_nums) / len(new_nums)
