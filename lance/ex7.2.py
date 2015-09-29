@@ -2,15 +2,28 @@
 fname = raw_input("Enter file name: ")
 fh = open(fname)
 
-for line in fh:
-    if not line.startswith("X-DSPAM-Confidence:") : continue
-    print line
-
+total = 0
 count = 0
 
-for var in fh:
-    count = count + 1
-    print count
+for line in fh:
+    if not line.startswith("X-DSPAM-Confidence:") : continue
+    # print line # displays whole line
+    # print line # displays X-DSPAM-Confidence: 0...
+    # print line[0:18] # displays X-DSPAM-Confidence:
+    # print line[20:] # displays 0...
+    line_num = line[20:] # stores 0...
+    
+value = float(line_num)
+total = total + value
+count = count + 1
+
+average = total / count
+print "Average spam confidence:",average
+
+
+# for var in fh:
+#     count = count + 1
+#     print count
 
 # print line.find('0.')
 
