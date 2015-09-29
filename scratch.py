@@ -1,5 +1,65 @@
-x = 10.5 * 40 + (10.5 * 1.5 * (45 - 40))
-print x
+s = 'word'
+print('The full string is: ', s)
+n = len(s)
+for i in range(n):
+    print()
+    print('i =', i)
+    print('The letter at index i:', s[i])
+    print('The part before index i (if any):', s[:i])
+    print('The part before index i+2:', s[:i+2])
+
+#fhand = open('mbox-short.txt')
+#inp = fhand.read()
+
+#fhand = open('mbox.txt')
+#x = 0
+#for line in fhand:
+#       x = x + 1
+#print x
+
+# smallest_so_far = None
+# for the_num in [9, 41, 12, 3, 74, 15] :
+#   if the_num < smallest_so_far :
+#       smallest_so_far = the_num
+# print smallest_so_far
+
+# zork = 0
+# for thing in [9, 41, 12, 3, 74, 15] :
+#     zork = zork + thing
+# print 'After', zork
+
+# tot = 0 
+# for i in [5, 4, 3, 2, 1] :
+#     tot = tot + 1
+# print tot
+
+# n = 5
+# while n > 0 :
+#     print n
+# print 'All done'
+
+# def stuff():
+#     print 'Hello'
+#     return
+#     print 'World'
+
+# stuff()
+
+# def addtwo(a, b):
+#     added = a + b
+#     return a
+
+# x = addtwo(2, 7)
+# print x
+
+# def func(x) :
+#     print x
+
+# func(10)
+# func(20)
+
+# x = 10.5 * 40 + (10.5 * 1.5 * (45 - 40))
+# print x
 
 # def computepay(h,r):
 #     return h + (r * 1.5 * (h - 40))
