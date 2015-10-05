@@ -8,14 +8,17 @@ fname = raw_input("Enter file name: ")
 fh = open(fname)
 
 lst = []
+seen = set()
 
 for line in fh:
     line = line.strip()
-    parts = line.rsplit()
+    parts = line.split()
     
     for words in parts:
-        app = words.append()
-        
-app.sort()
+        if words not in seen:
+            seen.add(words)
+            lst.append(words)
 
-print app
+lst.sort()
+  
+print lst
