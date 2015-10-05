@@ -12,7 +12,10 @@ lst = []
 for line in fh:
     line = line.strip()
     parts = line.rsplit()
-    parts.sort()
-    print parts
+    
+    for words in parts:
+        app = words.append()
+        
+app.sort()
 
-# test
+print app
