@@ -7,17 +7,16 @@ fname = raw_input("Enter file name: ")
 if len(fname) < 1 : fname = "mbox-short.txt"
 fh = open(fname)
 
-total = 0
 email = []
 
 for line in fh:
     if line.startswith("From:"):
         line = line.strip()
+        words = line.split() # useless with for function below
         email.append(line[6:])
- 	  #  count = sum(1 for line in open(fname)) # entire file's line count
         
-for line in email: print line
-# print("\n".join(email))
+for line in email: print line # best solution but playground wants split() too
+# print("\n".join(email)) # does same as for line above, left for ref
 
 count = sum(1 for line in email)
 
