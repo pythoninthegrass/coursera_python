@@ -12,8 +12,8 @@ email = []
 
 for line in fh:
     if line.startswith("From:"):
-	    line = line.strip()
- 	    email.append(line[6:])
+        line = line.strip()
+        email.append(line[6:])
  	  #  count = sum(1 for line in open(fname)) # entire file's line count
         
 for line in email: print line
