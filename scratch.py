@@ -1,12 +1,31 @@
-s = 'word'
-print('The full string is: ', s)
-n = len(s)
-for i in range(n):
-    print()
-    print('i =', i)
-    print('The letter at index i:', s[i])
-    print('The part before index i (if any):', s[:i])
-    print('The part before index i+2:', s[:i+2])
+friends = [ 'Joseph', 'Glenn', 'Sally' ]
+friends.sort()
+print friends[0]
+
+# t = [9, 41, 12, 3, 74, 15]
+# print t[2:4]
+
+# a = [1, 2, 3]
+# b = [4, 5, 6]
+# c = a + b
+# print len(c)
+
+# fruit = 'Banana'
+# # fruit[0] = 'b'
+# print len(fruit)
+
+# friends = [ 'Joseph', 'Glenn', 'Sally' ]
+# print friends[2]
+
+# s = 'word'
+# print('The full string is: ', s)
+# n = len(s)
+# for i in range(n):
+#     print()
+#     print('i =', i)
+#     print('The letter at index i:', s[i])
+#     print('The part before index i (if any):', s[:i])
+#     print('The part before index i+2:', s[:i+2])
 
 #fhand = open('mbox-short.txt')
 #inp = fhand.read()
