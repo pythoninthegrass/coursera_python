@@ -1,6 +1,9 @@
-friends = [ 'Joseph', 'Glenn', 'Sally' ]
-friends.sort()
-print friends[0]
+stuff = dict()
+print stuff.get('candy',-1)
+
+# friends = [ 'Joseph', 'Glenn', 'Sally' ]
+# friends.sort()
+# print friends[0]
 
 # t = [9, 41, 12, 3, 74, 15]
 # print t[2:4]
