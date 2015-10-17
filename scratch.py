@@ -1,5 +1,11 @@
-stuff = dict()
-print stuff.get('candy',-1)
+x = (5, 1, 3)
+if (6, 0, 0) > x :
+	print "greater"
+else:
+	print "nope"
+
+# stuff = dict()
+# print stuff.get('candy',-1)
 
 # friends = [ 'Joseph', 'Glenn', 'Sally' ]
 # friends.sort()
