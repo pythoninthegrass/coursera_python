@@ -10,18 +10,17 @@ fname = raw_input("Enter file name: ")
 if len(fname) < 1 : fname = "mbox-short.txt"
 fh = open(fname)
 
-email = []
+lst = []
 
 for line in fh:
-    if line.startswith("From:"):
-        line = line.strip()
-        words = line.split()
-        # email.append(line[6:])
-    
+    line = line.rstrip()
+    if line.startswith("From "):
+        words = line.split()[5]
+        lst.append(words[:2])
+        # lst.append(words)
 
-# for line in email: print line # best solution but playground wants split() too
-# print("\n".join(email)) # does same as for line above, left for ref
+lst.sort(reverse=True)
 
-# count = sum(1 for line in email)
+print lst
 
-# print "There were", count, "lines in the file with From as the first word"
+# counts = dict()
