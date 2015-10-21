@@ -1,3 +1,4 @@
+#mbox-short.
 fname = raw_input("Enter file: ")
 fh = open(fname)
 
