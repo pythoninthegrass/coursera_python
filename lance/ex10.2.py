@@ -21,7 +21,7 @@ lst = list()
 
 for key, val in counts.items():
     lst.append((val, key))
-    lst.sort(reverse=True)
+lst.sort(reverse=True)
 
 for val, key in lst[:10]:
     print key, val
