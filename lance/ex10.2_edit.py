@@ -19,8 +19,21 @@ for line in fh:
         lst.append(words[:2])
         # lst.append(words)
 
-lst.sort(reverse=True)
+# lst.sort(reverse=True)
 
-print lst
+# print lst
 
-# counts = dict()
+counts = dict()
+
+for line in lst:
+    counts[line] = counts.get(line, 0) + 1
+
+# print counts.items()
+
+for k, v in counts.items():
+    # lst.append((k, v))
+    print (k, v)
+
+## Nicer output than for loop above. Still not the correct format.
+# import pprint
+# pprint.pprint(counts)
