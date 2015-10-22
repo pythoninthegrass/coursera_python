@@ -6,4 +6,5 @@
   * Weeks 8 - 14
 * Using Python to Access Web Data
   * Weeks 15 - 21
+
 See: https://www.coursera.org/learn/python/
