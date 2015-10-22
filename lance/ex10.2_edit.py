@@ -18,31 +18,15 @@ for line in fh:
         words = line.split()[5]
         lst.append(words[:2])
 
-<<<<<<< HEAD
-
 counts = dict()
 
-=======
-# lst.sort(reverse=True)
-
-# print lst
-
-counts = dict()
-
->>>>>>> c4fd0a6e57bf0a786fa60dd26b25b7791db2e1c5
 for line in lst:
     counts[line] = counts.get(line, 0) + 1
 
 # print counts.items()
 
-<<<<<<< HEAD
 for k, v in sorted(counts.items()):
     print k, v
-=======
-for k, v in counts.items():
-    # lst.append((k, v))
-    print (k, v)
->>>>>>> c4fd0a6e57bf0a786fa60dd26b25b7791db2e1c5
 
 ## Nicer output than for loop above. Still not the correct format.
 # import pprint
