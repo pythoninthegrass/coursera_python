@@ -1,8 +1,22 @@
-x = (5, 1, 3)
-if (6, 0, 0) > x :
-	print "greater"
-else:
-	print "nope"
+x = [1, 2, 3]
+y = [4, 5, 6]
+
+def join_lists(x, y):
+    return x + y
+
+# def join_strings(words):
+#     result = ("")
+#     for i in range(len(words)):
+#         result = result + words[i]
+#     return result
+
+# print join_strings(n)
+
+# x = (5, 1, 3)
+# if (6, 0, 0) > x :
+# 	print "greater"
+# else:
+# 	print "nope"
 
 # stuff = dict()
 # print stuff.get('candy',-1)
