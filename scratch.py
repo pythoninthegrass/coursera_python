@@ -1,8 +1,26 @@
-x = [1, 2, 3]
-y = [4, 5, 6]
+import re
+x = 'From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008'
+y = re.findall('\S+?@\S+' , x)
+print y
 
-def join_lists(x, y):
-    return x + y
+# import re
+# x = 'From: Using the : character'
+# y = re.findall('^F.+:', x)
+# print y
+
+# import re
+# hand = open('mbox-short.txt')
+# for line in hand:
+#     line = line.rstrip()
+#     x = re.findall('@\S+[a-zA-Z]', line)
+#     if len(x) > 0 :
+#         print x
+
+# x = [1, 2, 3]
+# y = [4, 5, 6]
+
+# def join_lists(x, y):
+#     return x + y
 
 # def join_strings(words):
 #     result = ("")
