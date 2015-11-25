@@ -1,24 +1,20 @@
+# Retrieve all of the anchor tags
 import urllib
 from BeautifulSoup import *
+import re
 
-count = 0
-position = 0
+yum = []
+url = 'http://python-data.dr-chuck.net/comments_167524.html'
+html = urllib.urlopen(url).read()
 
-url = 'https://pr4e.dr-chuck.com/tsugi/mod/python-data/data/known_by_Forrest.html'
+soup = BeautifulSoup(html)
 
-while count != 7:
+tags = soup('span')
+for tag in tags:
+	#tag = re.search(str(tag), [0-9]) 
+	yum.append(tag.contents[0])
 
-    html = urllib.urlopen(url)
-    data = html.read()
-    soup = BeautifulSoup(data)
-    tags = soup('a')
+yumnum = [int(i) for i in yum]
 
-    for tag in tags:
-    	position = position + 1
-    	if position == 18:
-            url = tag.get('href', None)
-            print url
-            count = count + 1
-            position = 0
-            break
-    continue
+
+print sum(yumnum)
