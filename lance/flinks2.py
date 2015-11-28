@@ -8,8 +8,8 @@
 import urllib
 from BeautifulSoup import *
 
-address1 = 'http://pr4e.dr-chuck.com/tsugi/mod/python-data/data/known_by_Fikret.html'
-address2 = 'https://pr4e.dr-chuck.com/tsugi/mod/python-data/data/known_by_Jaksyn.html'
+# address = 'http://pr4e.dr-chuck.com/tsugi/mod/python-data/data/known_by_Fikret.html'
+address = 'https://pr4e.dr-chuck.com/tsugi/mod/python-data/data/known_by_Jaksyn.html'
 
 # Number of repeated processes
 n = 0
@@ -17,17 +17,30 @@ n = 0
 # Position counter
 x = 0
 
-#pos = raw_input('Enter Position: ')
+## address1 (AKA sample problem)
+# while n < 4:
+#
+#     html = urllib.urlopen(address).read()
+#     soup = BeautifulSoup(html)
+#     tags = soup('a')
+#
+#     for link in tags:
+#         x = x + 1
+#         if x == 3:
+#             address = link.get('href', None)
+#             print address
+#             x = 0
+#             break
+#     n = n + 1
 
-while n < 4:
-#    print 'Retrieving URL'
-    html = urllib.urlopen(address2).read()
+## address2 (AKA actual problem)
+while n < 7:
+    html = urllib.urlopen(address).read()
     soup = BeautifulSoup(html)
     tags = soup('a')
-#    link = tag.get('href', None)
     for link in tags:
         x = x + 1
-        if x == 3:
+        if x == 18:
             address = link.get('href', None)
             print address
             x = 0
