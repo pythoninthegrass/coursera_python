@@ -28,8 +28,9 @@ while n < 4:
         x = x + 1
         if x == 3:
             address = link.get('href', None)
-            print address
+#            print address
             x == 0
             break
     n = n + 1
+    print address
 #    next_link = "parse html for next url"
