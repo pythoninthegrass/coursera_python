@@ -1,1 +1,1 @@
-print "Suck it, I've got python installed"
+print "I've got python installed!"
