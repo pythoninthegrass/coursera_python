@@ -26,7 +26,7 @@ while n < 4:
 #    link = tag.get('href', None)
     for link in tags:
         x = x + 1
-        if x = 3:
+        if x == 3:
             address = link.get('href', None)
             print address
             x = 0
