@@ -32,5 +32,3 @@ while n < 4:
             x = 0
             break
     n = n + 1
-#    print address
-#    next_link = "parse html for next url"
