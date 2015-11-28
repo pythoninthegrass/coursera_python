@@ -8,7 +8,8 @@
 import urllib
 from BeautifulSoup import *
 
-address = 'http://pr4e.dr-chuck.com/tsugi/mod/python-data/data/known_by_Fikret.html'
+address1 = 'http://pr4e.dr-chuck.com/tsugi/mod/python-data/data/known_by_Fikret.html'
+address2 = 'https://pr4e.dr-chuck.com/tsugi/mod/python-data/data/known_by_Jaksyn.html'
 
 # Number of repeated processes
 n = 0
@@ -20,7 +21,7 @@ x = 0
 
 while n < 4:
 #    print 'Retrieving URL'
-    html = urllib.urlopen(address).read()
+    html = urllib.urlopen(address2).read()
     soup = BeautifulSoup(html)
     tags = soup('a')
 #    link = tag.get('href', None)
