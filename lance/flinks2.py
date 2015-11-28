@@ -8,25 +8,28 @@
 import urllib
 from BeautifulSoup import *
 
-# url = raw_input('Enter URL: ')
-url = urllib.urlopen('http://pr4e.dr-chuck.com/tsugi/mod/python-data/data/known_by_Fikret.html').read()
-# html = urllib.urlopen(url).read()
+address = 'http://pr4e.dr-chuck.com/tsugi/mod/python-data/data/known_by_Fikret.html'
 
-# soup = BeautifulSoup(html)
-soup = BeautifulSoup(url)
+# Number of repeated processes
+n = 0
 
-# Retrieve all of the anchor (a) tags
-tags = soup('a')
+# Position counter
+x = 0
 
-lst = []
+#pos = raw_input('Enter Position: ')
 
-# position = raw_input('Enter Position: ')
-
-for tag in tags:
-   link = lst[0]
-   new_links = tag.get('href', None)
-   # print tag.get('href', None)
-   # lst = lst.append(tag.contents[0:])
-   lst = lst.append(tag.contents[link])
-
-print lst
+while n < 4:
+#    print 'Retrieving URL'
+    html = urllib.urlopen(address).read()
+    soup = BeautifulSoup(html)
+    tags = soup('a')
+#    link = tag.get('href', None)
+    for link in tags:
+        x = x + 1
+        if x == 3:
+            address = link.get('href', None)
+            print address
+            x == 0
+            break
+    n = n + 1
+#    next_link = "parse html for next url"
