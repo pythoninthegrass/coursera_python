@@ -22,12 +22,12 @@ tags = soup('a')
 # links = []
 
 for tag in tags:
-   # print tag.get('href', None)
+   print tag.get('href', None)
    # results = tag.get('href', None)
    # count = raw_input('Enter count: ') # fetch count
    # position = raw_input('Enter position: ') # fetch position
    # tags[position].get('href', None)
-   print tags[17].get('href', None)
+   # print tags[17].get('href', None)
    # words = results.split()
    # links.append(words[0:])
    # print links
