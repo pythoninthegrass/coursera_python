@@ -10,8 +10,8 @@ while True:
     # print 'Retrieving', url
     uh = urllib.urlopen(url)
     data = uh.read()
-    print 'Retrieved',len(data),'characters'
-    print data
+    # print 'Retrieved',len(data),'characters'
+    # print data
     tree = ET.fromstring(data)
     count = tree.findall('.//count')
-    print count
+    # print count
