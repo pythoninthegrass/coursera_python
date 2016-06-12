@@ -1,35 +1,20 @@
 import json
 import urllib
 
-# url = 'http://python-data.dr-chuck.net/comments_42.json' # sum = 2482
-url = 'http://python-data.dr-chuck.net/comments_42.json'
-uh = urllib.urlopen(url)
-json_data = uh.read()
+url = 'http://python-data.dr-chuck.net/comments_42.json' # sum = 2553
+# url = 'http://python-data.dr-chuck.net/comments_167525.json'
+uh = urllib.urlopen(url).read()
 
-# input = '''
-# [
-#   { "id" : "001",
-#     "x" : "2",
-#     "name" : "Chuck"
-#   } ,
-#   { "id" : "009",
-#     "x" : "7",
-#     "name" : "Chuck"
-#   }
-# ]'''
+info = json.loads(uh)
 
-# info = json.loads(input)
-# try:
-#     nums = int(json_data)
-# except:
-#     nums = -1 # impossible age but valid int fallback
-# info = json.loads(nums)
-info = json.loads(json_data)
+nums = [] # list
+numbers = 0 # counter
 
-# count = sum(1 for x in info(".//comments"))
+for item in info['comments']:
+    nums.append(item['count'])
+    numbers = numbers + item['count']
+    # print numbers # shows iteration adding up to 2553
 
-print 'User count:', len(count)
-
-for item in info:
-    print 'Name', item['name']
-    print 'Id', item['id']
+print "The number of items counted is: ",len(nums)
+print "These are the numbers: ",nums
+print "The sum of counted numbers is: ",numbers
