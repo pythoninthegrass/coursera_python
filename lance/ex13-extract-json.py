@@ -1,8 +1,8 @@
 import json
 import urllib
 
-url = 'http://python-data.dr-chuck.net/comments_42.json' # sum = 2553
-# url = 'http://python-data.dr-chuck.net/comments_167525.json'
+# url = 'http://python-data.dr-chuck.net/comments_42.json' # sum = 2553
+url = 'http://python-data.dr-chuck.net/comments_166743.json'
 uh = urllib.urlopen(url).read()
 
 info = json.loads(uh)
